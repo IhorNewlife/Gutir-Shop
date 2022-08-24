@@ -24,6 +24,7 @@
 
 // Body Locked
 body {
+    font-family: "Poppins", sans-serif;
     &.locked {
         overflow: hidden;
     }
@@ -39,4 +40,16 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+// colors
+$mainColor: #121212;
+$secondaryColor: rgba(18, 18, 18, 0.4);
+$acentColor: #ff6428;
+$acentColorHover: #b7491e;
+
+svg path {
+    stroke: inherit;
+    stroke-width: inherit;
+    fill: blackt;
 }

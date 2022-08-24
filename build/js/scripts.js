@@ -1,3 +1,4 @@
+// Custom Scripts
 // Custom scripts
 // Мобильное меню бургер
 function burgerMenu() {
@@ -39,3 +40,4 @@ function fixedNav() {
   }
 }
 window.addEventListener("scroll", fixedNav);
+

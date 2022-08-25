@@ -6,6 +6,9 @@
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
+	@media (max-width: $breakpoint480) {
+		padding-bottom: 80px;
+	}
 	&__title {
 		font-family: "Cal Sans";
 		font-style: normal;
@@ -55,6 +58,9 @@
 		&:hover {
 			transform: scale(1.2);
 			transition: 0.4s;
+			path {
+				fill: $acentColor;
+			}
 		}
 	}
 

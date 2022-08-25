@@ -1,0 +1,25 @@
+.brands {
+	padding-top: 110px;
+	padding-bottom: 110px;
+	&__cards {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 115px;
+		@media (max-width: $breakpoint768) {
+			gap: 120px;
+		}
+		flex-wrap: wrap;
+	}
+
+	&__card {
+		max-width: 115px;
+		max-height: 70px;
+	}
+
+	&__card-img {
+	}
+}
+.mr {
+	margin-bottom: 100px;
+}

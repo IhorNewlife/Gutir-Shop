@@ -266,6 +266,10 @@ nav {
   transition: 0.4s;
 }
 
+.nav__item:hover path {
+  fill: #ff6428;
+}
+
 .nav__btn {
   padding: 18px;
   color: #fff;
@@ -377,7 +381,7 @@ nav {
 }
 
 .categories {
-  padding-bottom: 115px;
+  padding-bottom: 110px;
 }
 
 .categories__links {
@@ -387,6 +391,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 5px;
 }
 
 .categories__link {
@@ -426,16 +431,43 @@ nav {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
-  /* identical to box height */
   text-align: center;
   color: #ffffff;
   margin-bottom: 30px;
+  position: absolute;
 }
 
 .categories__card-img {
   z-index: -1;
-  position: absolute;
-  top: 0;
+}
+
+.brands {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.brands__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 115px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.brands__card {
+  max-width: 115px;
+  max-height: 70px;
+}
+
+.mr {
+  margin-bottom: 100px;
 }
 
 @media (max-width: 1449.98px) {
@@ -461,6 +493,11 @@ nav {
 @media (max-width: 991.98px) {
   .container {
     max-width: 970px;
+  }
+
+  .categories__card-img {
+    max-width: 170px;
+    max-height: 230px;
   }
 }
 
@@ -489,6 +526,10 @@ nav {
   .store__card {
     max-width: 220px;
   }
+
+  .brands__cards {
+    gap: 120px;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -501,9 +542,17 @@ nav {
     line-height: 120%;
   }
 
+  .hero {
+    padding-bottom: 80px;
+  }
+
   .hero__text {
     font-size: 20px;
     line-height: 120%;
+  }
+
+  .store {
+    padding-bottom: 20px;
   }
 
   .store__cards {
@@ -513,6 +562,15 @@ nav {
 
   .store__card {
     max-width: 364px;
+  }
+
+  .categories__links {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

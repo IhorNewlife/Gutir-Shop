@@ -1,8 +1,15 @@
 .categories {
-	padding-bottom: 115px;
+	padding-bottom: 110px;
+
 	&__links {
 		display: flex;
 		justify-content: space-between;
+		gap: 5px;
+		@media (max-width: $breakpoint480) {
+			flex-wrap: wrap;
+			gap: 30px;
+			justify-content: center;
+		}
 	}
 
 	&__link {
@@ -20,9 +27,7 @@
 		align-items: flex-end;
 		max-width: 220px;
 		max-height: 280px;
-		// 	@media (max-width: $breakpoint992) {
-		// 		max-width: 970px;
-		//   }
+
 		position: relative;
 	}
 
@@ -32,16 +37,18 @@
 		font-weight: 600;
 		font-size: 20px;
 		line-height: 30px;
-		/* identical to box height */
 
 		text-align: center;
 
 		color: #ffffff;
 		margin-bottom: 30px;
+		position: absolute;
 	}
 	&__card-img {
+		@media (max-width: $breakpoint992) {
+			max-width: 170px;
+			max-height: 230px;
+		}
 		z-index: -1;
-		position: absolute;
-		top: 0;
 	}
 }

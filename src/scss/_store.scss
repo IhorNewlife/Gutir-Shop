@@ -1,6 +1,9 @@
 .store {
 	padding-top: 80px;
 	padding-bottom: 80px;
+	@media (max-width: $breakpoint480) {
+		padding-bottom: 20px;
+	}
 
 	&__subtitle {
 		font-family: "Poppins";

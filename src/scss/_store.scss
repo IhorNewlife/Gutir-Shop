@@ -1,0 +1,93 @@
+.store {
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+	&__subtitle {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 30px;
+		letter-spacing: 0.08em;
+		color: $mainColor;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 32px;
+	}
+
+	&__btn {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 30px;
+		color: #868686;
+		transition: 0.4s all ease;
+		&:hover {
+			color: $acentColorHover;
+			transition: 0.4s all ease;
+		}
+	}
+
+	&__cards {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 95px;
+		@media (max-width: $breakpoint480) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__card {
+		max-width: 364px;
+		@media (max-width: $breakpoint1024) {
+			max-width: 280px;
+		}
+		@media (max-width: $breakpoint768) {
+			max-width: 220px;
+		}
+		@media (max-width: $breakpoint480) {
+			max-width: 364px;
+		}
+		transition: 0.4s all ease;
+		border-radius: 10px;
+		overflow: hidden;
+		&:hover {
+			transform: scale(1.1);
+			-webkit-box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 0.75);
+			box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 0.75);
+			transition: 0.4s all ease;
+		}
+	}
+}
+
+.card {
+	&__link {
+	}
+
+	&__link-img {
+		margin-bottom: 40px;
+	}
+
+	&__link-img--name {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: $mainColor;
+		margin-bottom: 7px;
+		margin-left: 5px;
+	}
+
+	&__link-img--price {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		color: #666666;
+		margin-left: 5px;
+	}
+}

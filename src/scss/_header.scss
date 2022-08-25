@@ -29,6 +29,10 @@ nav {
 	width: 100%;
 	padding-top: 60px;
 	padding-bottom: 60px;
+	@media (max-width: $breakpoint768) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 }
 
 .logo {
@@ -53,6 +57,10 @@ nav {
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 24px;
+		@media (max-width: $breakpoint480) {
+			font-size: 26px;
+			line-height: 120%;
+		}
 		/* identical to box height */
 		transition: 0.4s;
 		color: $secondaryColor;

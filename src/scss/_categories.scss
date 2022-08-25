@@ -1,0 +1,47 @@
+.categories {
+	padding-bottom: 115px;
+	&__links {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__link {
+		position: relative;
+		transition: 0.3s all ease;
+		&:hover {
+			transform: scale(1.1);
+			transition: 0.3s all ease;
+		}
+	}
+
+	&__card {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		max-width: 220px;
+		max-height: 280px;
+		// 	@media (max-width: $breakpoint992) {
+		// 		max-width: 970px;
+		//   }
+		position: relative;
+	}
+
+	&__card-name {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 30px;
+		/* identical to box height */
+
+		text-align: center;
+
+		color: #ffffff;
+		margin-bottom: 30px;
+	}
+	&__card-img {
+		z-index: -1;
+		position: absolute;
+		top: 0;
+	}
+}

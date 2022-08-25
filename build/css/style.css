@@ -107,6 +107,20 @@ svg path {
   fill: blackt;
 }
 
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 53px;
+  color: #121212;
+  text-align: center;
+  margin-bottom: 85px;
+}
+
+.title span {
+  color: #ff6428;
+}
+
 @font-face {
   font-family: "CalSans-SemiBold";
   src: url("/src/fonts/CalSans-SemiBold.otf");
@@ -266,6 +280,164 @@ nav {
   background-color: #b7491e;
 }
 
+.store {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.store__subtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.08em;
+  color: #121212;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.store__btn {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #868686;
+  -webkit-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+.store__btn:hover {
+  color: #b7491e;
+  -webkit-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+.store__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 95px;
+}
+
+.store__card {
+  max-width: 364px;
+  -webkit-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.store__card:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 0.75);
+  -webkit-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+.card__link-img {
+  margin-bottom: 40px;
+}
+
+.card__link-img--name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #121212;
+  margin-bottom: 7px;
+  margin-left: 5px;
+}
+
+.card__link-img--price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+  margin-left: 5px;
+}
+
+.categories {
+  padding-bottom: 115px;
+}
+
+.categories__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.categories__link {
+  position: relative;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.categories__link:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.categories__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 220px;
+  max-height: 280px;
+  position: relative;
+}
+
+.categories__card-name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.categories__card-img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+}
+
 @media (max-width: 1449.98px) {
   .container {
     max-width: 1200px;
@@ -275,6 +447,14 @@ nav {
 @media (max-width: 1024.98px) {
   .navbar {
     gap: 200px;
+  }
+
+  .hero__text {
+    color: burlywood;
+  }
+
+  .store__card {
+    max-width: 280px;
   }
 }
 
@@ -295,11 +475,44 @@ nav {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+
+  .navbar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .store__card {
+    max-width: 220px;
+  }
 }
 
 @media (max-width: 479.98px) {
   .container {
     max-width: none;
+  }
+
+  .menu__item-link {
+    font-size: 26px;
+    line-height: 120%;
+  }
+
+  .hero__text {
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  .store__cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .store__card {
+    max-width: 364px;
   }
 }
 

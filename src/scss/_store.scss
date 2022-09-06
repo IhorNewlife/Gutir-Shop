@@ -52,12 +52,6 @@
 
 	&__card {
 		max-width: 364px;
-		// @media (max-width: $breakpoint1024) {
-		// 	max-width: 280px;
-		// }
-		// @media (max-width: $breakpoint768) {
-		// 	max-width: 300px;
-		// }
 		@media (max-width: $breakpoint480) {
 			max-width: 364px;
 		}

@@ -49,12 +49,14 @@ footer {
 
     &__wrapper {
         display: flex;
-        width: 645px;
+        max-width: 645px;
         column-gap: 130px;
 
         @media (max-width: $breakpoint768) {
-            justify-content: space-between;
-            gap: 0;
+            flex-wrap: wrap;
+            column-gap: 130px;
+            row-gap: 40px;
+            justify-content: center;
         }
     }
     &__colum {
@@ -95,7 +97,10 @@ footer {
         height: 70px;
 
         &_item:first-child {
-            margin-right: 50px;
+            width: 160px;
+            @media (max-width: $breakpoint768) {
+                text-align: center;
+            }
         }
 
         & a:hover {

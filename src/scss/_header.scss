@@ -23,7 +23,7 @@ nav {
 		justify-content: space-between;
 	}
 	@media (max-width: $breakpoint1024) {
-		gap: 200px;
+		justify-content: space-between;
 	}
 	align-items: center;
 	width: 100%;

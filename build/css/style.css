@@ -769,7 +769,9 @@ footer {
 
 @media (max-width: 1024.98px) {
   .navbar {
-    gap: 200px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .hero__text {
